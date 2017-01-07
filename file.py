@@ -32,6 +32,7 @@ for i in f.readlines()[21:]:
 t = file("test.txt","r")
 content = t.read()
 pos = content.find("    virtual_ipaddress")
+#pos等于0的时候表示能find到。
 if pos != -1:
     content = content[:pos] + h +content[pos:]
     t = file("test.txt","w")
