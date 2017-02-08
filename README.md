@@ -17,9 +17,10 @@ aaa
 ccc
 bbb
 怎样写算法才能把“aaa”和“bbb”提取出来写进文档C中？！
+
 ---
 __写法__
-{{fa = open('A.txt')
+```fa = open('A.txt')
 a = fa.readlines()
 fa.close()
 fb = open('B.txt')
@@ -28,9 +29,10 @@ fb.close()
 c = [i for i in a if i in b]
 fc = open('C.txt', 'w')
 fc.writelines(c)
-fc.close()}}
+fc.close()```
 其中
-{{c = [i for i in a if i in b]  }}等价于{{c = []
+```c = [i for i in a if i in b] ```  等价于
+```c = []
 for i in a:
     if i in b:
-        c.append(i)}}
+        c.append(i)```
