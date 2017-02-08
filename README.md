@@ -40,3 +40,5 @@ __写法__
         if i in b:
             c.append(i)
  
+### coding.py
+    这个脚本是用于windows上传到linux的文件，字符无法识别，用于转换编码的。
