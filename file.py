@@ -1,4 +1,5 @@
 #!/usr/bin/env python
+#coding:utf-8
 
 f = file("keepalived-lvs01.conf")
 t = file("test.txt","r+")
